@@ -10,6 +10,10 @@ class UsersController extends Controller
 {
     //
     public function profile(){
+        $users = DB::table('users')
+            ->join()
+        $user_posts = DB::table('posts')
+            ->join()
         return view('users.profile');
     }
     public function search(Request $request){

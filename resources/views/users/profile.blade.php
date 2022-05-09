@@ -15,11 +15,11 @@
     @endforeach
 </div>
 <div class='posts_wrapper'>
-    @foreach($users as $user)
+    @foreach($user_posts as $user_post)
             <img src="images/{{$user->images}}">
-            <p>{{$user->username}}</p>
-            <p>{{$_post->posts}}</p>
-            <p>{{$->created_at}}</p>
+            <p>{{$user_post->username}}</p>
+            <p>{{$user_post->posts}}</p>
+            <p>{{$user_post->created_at}}</p>
     @endforeach
 </div>
 
