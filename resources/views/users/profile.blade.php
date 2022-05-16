@@ -3,7 +3,6 @@
 @section('content')
 
 <div class='profile_wrapper'>
-    @foreach($users as $user)
    <img src="/images/{{$user->images}}">
    <p>{{$user->username}}</p>
    <p>{{$user->bio}}</p>
@@ -12,11 +11,10 @@
       @else
       <a><button type="submit" onclick="location.href=`/unfollow/{{$user->id}}`" class="btn btn-success pull-right">フォローをはずす</button></a>
     @endif
-    @endforeach
 </div>
 <div class='posts_wrapper'>
     @foreach($user_posts as $user_post)
-            <img src="images/{{$user->images}}">
+            <img src="/images/{{$user->images}}">
             <p>{{$user_post->username}}</p>
             <p>{{$user_post->posts}}</p>
             <p>{{$user_post->created_at}}</p>

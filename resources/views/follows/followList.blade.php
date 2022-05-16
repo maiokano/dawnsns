@@ -4,7 +4,7 @@
 
 <div class='followlist_wrapper'>
   @foreach($users as $user)
-   <a><img src="/images/{{$user->images}}"></a>
+   <a href="/user_profile/{{$user->id}}"><img src="/images/{{$user->images}}"></a>
   @endforeach
 </div>
 <div class='posts_wrapper'>
